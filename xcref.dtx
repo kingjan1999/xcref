@@ -2477,7 +2477,7 @@
 % \cs{g_@@_french_names_prop} in the \texttt{french} module for examples).
 %    \begin{macrocode}
 \prop_new:N \g_@@_ngerman_names_prop
-\prop_gset_from_keyval:Nn \g_@@_ngerman_names_prop
+\prop_gset_from_keyval:Nn \g__xcref_ngerman_names_prop
   {
     problem    = {in}{{das}{Problem}{die}{Probleme}}%
                    {{das}{Problem}{die}{Probleme}}%
@@ -2503,6 +2503,10 @@
                    {{die}{Definition}{die}{Definitionen}}%
                    {{der}{Definition}{den}{Definitionen}}%
                    {{der}{Definition}{der}{Definitionen}},
+    section    = {in}{{der Abschnitt}{die}{Abschnitte}}%
+                   {{des Abschnittes}{der Abschnitte}}%
+	       {{dem Abschnitt}{den Abschnitten}}%
+                   {{den Abschnitt}{den Abschnitten}}
   }
 %    \end{macrocode}
 % Will contain the list of keys in \cs{g_@@_ngerman_names_prop} (computed
@@ -2529,6 +2533,7 @@
     gegen = accusative,
     ohne  = accusative,
     um    = accusative,
+    in    = accusative
     aus   = dative,
     bei   = dative,
     mit   = dative,
